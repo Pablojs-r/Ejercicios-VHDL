@@ -1,25 +1,47 @@
 Por: Pablo Josue Serrano Riofrio
 
 ------------------------------------------------
-Ejercicio de entidad
+Ejercicios de entidad
 ------------------------------------------------
+1)
 entity Tabla is
     port( A, B, C: in bit;
           F0, F1: out bit):
 end Tabla;
 
 
+2)
+enity Circuito is
+    port (a,b,c,d,f,g,h, : in bit; F1: out bit);
+end Circuito;
+
+
+3)
+entity Proyecto is
+     port (A3, A2, A1, A0, B3, B2, B2, B0: in bit;
+           C3, C2, C1, C0: inout bit;
+           S3,S2,S1 ,S0: out bit);
+end Proyecto;
+
+
 
 
 ------------------------------------------------
-Ejercicio de Vector 
+Ejercicios de Vector 
 ------------------------------------------------
+1)
 library ieee;
 use ieee.std_logic_1164.all;
 
 entity Bloque is
     port (X: in std_logic_vector(1 downto 0); A,B: in std_logic; Z: out std_logic_vector(0 to 3));
 end Bloque;
+
+
+2)
+entity Control is
+     port (Q: in bit_vector (3 downto 0); F: out bit_vector (0 to 7));
+end Control;
 
 
 
